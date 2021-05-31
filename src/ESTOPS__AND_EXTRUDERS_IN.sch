@@ -1,0 +1,82 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Duet2:Motor U?
+U 1 1 610D320D
+P 1545 995
+F 0 "U?" H 1903 821 25  0000 L CNN
+F 1 "DUET_E1" H 1903 769 25  0000 L CNN
+F 2 "" H 1545 995 25  0001 C CNN
+F 3 "" H 1545 995 25  0001 C CNN
+	1    1545 995 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet2:Motor U?
+U 1 1 610D3C45
+P 3345 1040
+F 0 "U?" H 3703 866 25  0000 L CNN
+F 1 "DUET_E0" H 3703 814 25  0000 L CNN
+F 2 "" H 3345 1040 25  0001 C CNN
+F 3 "" H 3345 1040 25  0001 C CNN
+	1    3345 1040
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet2:Motor U?
+U 1 1 610D3EFF
+P 4890 1040
+F 0 "U?" H 5248 866 25  0000 L CNN
+F 1 "DUET_X" H 5248 814 25  0000 L CNN
+F 2 "" H 4890 1040 25  0001 C CNN
+F 3 "" H 4890 1040 25  0001 C CNN
+	1    4890 1040
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet2:Motor U?
+U 1 1 610D41CC
+P 6525 1020
+F 0 "U?" H 6883 846 25  0000 L CNN
+F 1 "DUET_Y" H 6883 794 25  0000 L CNN
+F 2 "" H 6525 1020 25  0001 C CNN
+F 3 "" H 6525 1020 25  0001 C CNN
+	1    6525 1020
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet2:Motor U?
+U 1 1 610D43E0
+P 8035 1010
+F 0 "U?" H 8393 836 25  0000 L CNN
+F 1 "DUET_Z1" H 8393 784 25  0000 L CNN
+F 2 "" H 8035 1010 25  0001 C CNN
+F 3 "" H 8035 1010 25  0001 C CNN
+	1    8035 1010
+	1    0    0    -1  
+$EndComp
+$Comp
+L Duet2:Motor U?
+U 1 1 610D4C93
+P 8040 2170
+F 0 "U?" H 8398 1996 25  0000 L CNN
+F 1 "DUET_Z2" H 8398 1944 25  0000 L CNN
+F 2 "" H 8040 2170 25  0001 C CNN
+F 3 "" H 8040 2170 25  0001 C CNN
+	1    8040 2170
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

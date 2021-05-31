@@ -1,0 +1,185 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J15
+U 1 1 60065E77
+P 1500 1200
+F 0 "J15" H 1550 775 50  0000 C CNN
+F 1 "ESP_COMM" H 1550 866 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 1500 1200 50  0001 C CNN
+F 3 "~" H 1500 1200 50  0001 C CNN
+	1    1500 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J14
+U 1 1 60068F3A
+P 1400 4000
+F 0 "J14" V 1364 3712 50  0000 R CNN
+F 1 "PANELDUE" V 1273 3712 50  0000 R CNN
+F 2 "complib:PIN_ARRAY_4x1" H 1400 4000 50  0001 C CNN
+F 3 "~" H 1400 4000 50  0001 C CNN
+	1    1400 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J13
+U 1 1 6006D168
+P 1400 3000
+F 0 "J13" V 1364 2812 50  0000 R CNN
+F 1 "EXT_5V" V 1273 2812 50  0000 R CNN
+F 2 "complib:PIN_ARRAY_3X1" H 1400 3000 50  0001 C CNN
+F 3 "~" H 1400 3000 50  0001 C CNN
+	1    1400 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0152
+U 1 1 600963F5
+P 900 1000
+F 0 "#PWR0152" H 900 850 50  0001 C CNN
+F 1 "+3.3V" H 915 1173 50  0000 C CNN
+F 2 "" H 900 1000 50  0001 C CNN
+F 3 "" H 900 1000 50  0001 C CNN
+	1    900  1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  1000 900  1100
+Wire Wire Line
+	900  1100 1200 1100
+Wire Wire Line
+	1200 1200 900  1200
+Wire Wire Line
+	1200 1300 900  1300
+Wire Wire Line
+	1200 1400 900  1400
+Wire Wire Line
+	900  1400 900  1500
+$Comp
+L power:GND #PWR0153
+U 1 1 60096F34
+P 900 1500
+F 0 "#PWR0153" H 900 1250 50  0001 C CNN
+F 1 "GND" H 905 1327 50  0000 C CNN
+F 2 "" H 900 1500 50  0001 C CNN
+F 3 "" H 900 1500 50  0001 C CNN
+	1    900  1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1000 2000 1000
+Wire Wire Line
+	1700 1100 2000 1100
+Wire Wire Line
+	1700 1200 2000 1200
+Wire Wire Line
+	1700 1300 2000 1300
+Wire Wire Line
+	1700 1400 2000 1400
+Text GLabel 2000 1000 2    39   Input ~ 0
+CS4
+Text GLabel 2000 1100 2    39   Input ~ 0
+CS3
+Text GLabel 2000 1200 2    39   Input ~ 0
+SPI0_MOSI
+Text GLabel 2000 1300 2    39   Input ~ 0
+SPI0_CS1
+Text GLabel 2000 1400 2    39   Input ~ 0
+SPI0_CS2
+Text GLabel 900  1300 0    39   Input ~ 0
+SPI0_SCK
+Text GLabel 900  1200 0    39   Input ~ 0
+SPI0_MISO
+Wire Wire Line
+	1500 3200 1500 3300
+$Comp
+L power:+5V #PWR0157
+U 1 1 6009CBD9
+P 2000 3300
+F 0 "#PWR0157" H 2000 3150 50  0001 C CNN
+F 1 "+5V" H 2015 3473 50  0000 C CNN
+F 2 "" H 2000 3300 50  0001 C CNN
+F 3 "" H 2000 3300 50  0001 C CNN
+	1    2000 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 3300 2000 3300
+Wire Wire Line
+	1400 3200 1400 3400
+Wire Wire Line
+	1400 3400 1900 3400
+Text GLabel 1900 3400 2    39   Input ~ 0
+PS_ON
+Wire Wire Line
+	1300 3200 1300 3500
+Wire Wire Line
+	1300 3500 1800 3500
+$Comp
+L power:GND #PWR0158
+U 1 1 6009E722
+P 1800 3500
+F 0 "#PWR0158" H 1800 3250 50  0001 C CNN
+F 1 "GND" H 1805 3327 50  0000 C CNN
+F 2 "" H 1800 3500 50  0001 C CNN
+F 3 "" H 1800 3500 50  0001 C CNN
+	1    1800 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 4200 1600 4400
+Wire Wire Line
+	1600 4400 1900 4400
+$Comp
+L power:+5V #PWR0159
+U 1 1 6009F9CC
+P 1900 4400
+F 0 "#PWR0159" H 1900 4250 50  0001 C CNN
+F 1 "+5V" H 1915 4573 50  0000 C CNN
+F 2 "" H 1900 4400 50  0001 C CNN
+F 3 "" H 1900 4400 50  0001 C CNN
+	1    1900 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 4200 1500 4600
+Wire Wire Line
+	1500 4600 1900 4600
+$Comp
+L power:GND #PWR0160
+U 1 1 600A0859
+P 1900 4600
+F 0 "#PWR0160" H 1900 4350 50  0001 C CNN
+F 1 "GND" H 1905 4427 50  0000 C CNN
+F 2 "" H 1900 4600 50  0001 C CNN
+F 3 "" H 1900 4600 50  0001 C CNN
+	1    1900 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 4200 1400 5000
+Wire Wire Line
+	1400 5000 1900 5000
+Text GLabel 1900 5000 2    39   Input ~ 0
+URXD0
+Wire Wire Line
+	1300 4200 1300 5200
+Wire Wire Line
+	1300 5200 1900 5200
+Text GLabel 1900 5200 2    39   Input ~ 0
+UTXD0
+$EndSCHEMATC

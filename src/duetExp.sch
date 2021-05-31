@@ -1,0 +1,1102 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 8268 11693 portrait
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 6885 7160 2    60   Input ~ 0
+E2_EN
+Text GLabel 6885 7310 2    60   Input ~ 0
+E2_E_OUT_Y
+$Comp
+L ExpBreakout:am26c31 U1
+U 1 1 60A27A9E
+P 5735 7610
+F 0 "U1" H 5735 7760 50  0000 L CNN
+F 1 "75ALS192" H 5585 7410 50  0000 L CNN
+F 2 "complib:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 5735 7610 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/am26c31.pdf" H 6585 6910 50  0001 C CNN
+	1    5735 7610
+	1    0    0    -1  
+$EndComp
+$Comp
+L ExpBreakout:C_SMALL C1
+U 1 1 60A27A9F
+P 6585 6710
+F 0 "C1" H 6610 6785 50  0000 L CNN
+F 1 "0u1" H 6585 6635 50  0000 L CNN
+F 2 "complib:C_0603" H 6585 6710 60  0001 C CNN
+F 3 "K104K10X7RF5UH5" H 6585 6710 60  0001 C CNN
+	1    6585 6710
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6435 6560 6435 6610
+Wire Wire Line
+	6435 6560 6335 6560
+Wire Wire Line
+	6435 6610 6585 6610
+Connection ~ 6435 6610
+Wire Wire Line
+	6585 6810 6585 6860
+$Comp
+L power:GND #PWR04
+U 1 1 60A27AA0
+P 6585 6860
+F 0 "#PWR04" H 6585 6610 50  0001 C CNN
+F 1 "GND" H 6585 6710 50  0000 C CNN
+F 2 "" H 6585 6860 50  0000 C CNN
+F 3 "" H 6585 6860 50  0000 C CNN
+	1    6585 6860
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6435 7260 6335 7260
+$Comp
+L power:GND #PWR05
+U 1 1 60A27AA1
+P 4985 8210
+F 0 "#PWR05" H 4985 7960 50  0001 C CNN
+F 1 "GND" H 4985 8060 50  0000 C CNN
+F 2 "" H 4985 8210 50  0000 C CNN
+F 3 "" H 4985 8210 50  0000 C CNN
+	1    4985 8210
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4985 7960 5135 7960
+Wire Wire Line
+	4985 7960 4985 8110
+Wire Wire Line
+	5135 7560 5635 7560
+Wire Wire Line
+	5635 7560 5635 7660
+Wire Wire Line
+	5635 8110 4985 8110
+Connection ~ 4985 8110
+Wire Wire Line
+	6335 7660 5635 7660
+Connection ~ 5635 7660
+Text GLabel 4885 7060 0    60   Input ~ 0
+E2_STEP
+Text GLabel 4885 7210 0    60   Input ~ 0
+E2_S_OUT_Y
+Text GLabel 4885 7360 0    60   Input ~ 0
+E2_S_OUT_Z
+Text GLabel 4885 7860 0    60   Input ~ 0
+E2_DIR
+Text GLabel 4885 7710 0    60   Input ~ 0
+E2_D_OUT_Y
+Text GLabel 4885 7560 0    60   Input ~ 0
+E2_D_OUT_Z
+Text GLabel 6885 7460 2    60   Input ~ 0
+E2_E_OUT_Z
+Text GLabel 6885 7960 2    60   Input ~ 0
+E3_STEP
+Text GLabel 6885 7810 2    60   Input ~ 0
+E3_S_OUT_Y
+Text GLabel 6885 7660 2    60   Input ~ 0
+E3_S_OUT_Z
+Wire Wire Line
+	4885 7060 5035 7060
+Wire Wire Line
+	5035 7060 5035 7260
+Wire Wire Line
+	5035 7260 5135 7260
+Wire Wire Line
+	4885 7210 4985 7210
+Wire Wire Line
+	4985 7210 4985 7360
+Wire Wire Line
+	4985 7360 5135 7360
+Wire Wire Line
+	4885 7360 4935 7360
+Wire Wire Line
+	4935 7360 4935 7460
+Wire Wire Line
+	4935 7460 5135 7460
+Wire Wire Line
+	4885 7860 5135 7860
+Wire Wire Line
+	5135 7760 4985 7760
+Wire Wire Line
+	4985 7760 4985 7710
+Wire Wire Line
+	4985 7710 4885 7710
+Wire Wire Line
+	5135 7660 5035 7660
+Wire Wire Line
+	5035 7660 5035 7560
+Wire Wire Line
+	5035 7560 4885 7560
+Wire Wire Line
+	6885 7960 6335 7960
+Wire Wire Line
+	6885 7810 6585 7810
+Wire Wire Line
+	6585 7810 6585 7860
+Wire Wire Line
+	6585 7860 6335 7860
+Wire Wire Line
+	6885 7660 6535 7660
+Wire Wire Line
+	6535 7660 6535 7760
+Wire Wire Line
+	6535 7760 6335 7760
+Wire Wire Line
+	6885 7460 6785 7460
+Wire Wire Line
+	6785 7460 6785 7560
+Wire Wire Line
+	6785 7560 6335 7560
+Wire Wire Line
+	6685 7460 6335 7460
+Wire Wire Line
+	6685 7310 6685 7460
+Wire Wire Line
+	6685 7310 6885 7310
+Wire Wire Line
+	6885 7160 6585 7160
+Wire Wire Line
+	6585 7160 6585 7360
+Wire Wire Line
+	6585 7360 6335 7360
+Wire Wire Line
+	6435 6610 6435 7260
+Wire Wire Line
+	4985 8110 4985 8210
+Wire Wire Line
+	5635 7660 5635 8110
+$Comp
+L ExpBreakout:C_SMALL C2
+U 1 1 60A27AA3
+P 6610 2760
+F 0 "C2" H 6635 2835 50  0000 L CNN
+F 1 "0u1" H 6610 2685 50  0000 L CNN
+F 2 "complib:C_0603" H 6610 2760 60  0001 C CNN
+F 3 "K104K10X7RF5UH5" H 6610 2760 60  0001 C CNN
+	1    6610 2760
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6460 2610 6460 2660
+Wire Wire Line
+	6460 2610 6360 2610
+Wire Wire Line
+	6460 2660 6610 2660
+Wire Wire Line
+	6610 2860 6610 2910
+Text GLabel 4915 5915 0    60   Input ~ 0
+E5_DIR
+Text GLabel 4915 5765 0    60   Input ~ 0
+E5_D_OUT_Y
+$Comp
+L ExpBreakout:am26c31 U3
+U 1 1 5899739A
+P 5765 5665
+F 0 "U3" H 5765 5815 50  0000 L CNN
+F 1 "75ALS192" H 5615 5465 50  0000 L CNN
+F 2 "complib:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 5765 5665 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/am26c31.pdf" H 6615 4965 50  0001 C CNN
+	1    5765 5665
+	1    0    0    -1  
+$EndComp
+$Comp
+L ExpBreakout:C_SMALL C3
+U 1 1 589973A1
+P 6615 4765
+F 0 "C3" H 6640 4840 50  0000 L CNN
+F 1 "0u1" H 6615 4690 50  0000 L CNN
+F 2 "complib:C_0603" H 6615 4765 60  0001 C CNN
+F 3 "K104K10X7RF5UH5" H 6615 4765 60  0001 C CNN
+	1    6615 4765
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6465 4615 6465 4665
+Wire Wire Line
+	6465 4615 6365 4615
+Wire Wire Line
+	6465 4665 6615 4665
+Wire Wire Line
+	6615 4865 6615 4915
+$Comp
+L power:GND #PWR08
+U 1 1 589973AD
+P 6615 4915
+F 0 "#PWR08" H 6615 4665 50  0001 C CNN
+F 1 "GND" H 6615 4765 50  0000 C CNN
+F 2 "" H 6615 4915 50  0000 C CNN
+F 3 "" H 6615 4915 50  0000 C CNN
+	1    6615 4915
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6465 5315 6365 5315
+$Comp
+L power:GND #PWR09
+U 1 1 60A27AA9
+P 5015 6265
+F 0 "#PWR09" H 5015 6015 50  0001 C CNN
+F 1 "GND" H 5015 6115 50  0000 C CNN
+F 2 "" H 5015 6265 50  0000 C CNN
+F 3 "" H 5015 6265 50  0000 C CNN
+	1    5015 6265
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5015 6015 5165 6015
+Wire Wire Line
+	5015 6015 5015 6165
+Wire Wire Line
+	5165 5615 5665 5615
+Wire Wire Line
+	5665 5615 5665 5715
+Wire Wire Line
+	5665 6165 5015 6165
+Wire Wire Line
+	6365 5715 5665 5715
+Connection ~ 5665 5715
+Text GLabel 4915 5115 0    60   Input ~ 0
+E4_EN
+Text GLabel 4915 5265 0    60   Input ~ 0
+E4_E_OUT_Y
+Text GLabel 4915 5415 0    60   Input ~ 0
+E4_E_OUT_Z
+Text GLabel 6915 5215 2    60   Input ~ 0
+E5_STEP
+Text GLabel 6915 5365 2    60   Input ~ 0
+E5_S_OUT_Y
+Text GLabel 6915 5515 2    60   Input ~ 0
+E5_S_OUT_Z
+Text GLabel 4915 5615 0    60   Input ~ 0
+E5_D_OUT_Z
+Text GLabel 6915 6015 2    60   Input ~ 0
+E5_EN
+Text GLabel 6915 5865 2    60   Input ~ 0
+E5_E_OUT_Y
+Text GLabel 6915 5715 2    60   Input ~ 0
+E5_E_OUT_Z
+Wire Wire Line
+	4915 5115 5065 5115
+Wire Wire Line
+	5065 5115 5065 5315
+Wire Wire Line
+	5065 5315 5165 5315
+Wire Wire Line
+	4915 5265 5015 5265
+Wire Wire Line
+	5015 5265 5015 5415
+Wire Wire Line
+	5015 5415 5165 5415
+Wire Wire Line
+	4915 5415 4965 5415
+Wire Wire Line
+	4965 5415 4965 5515
+Wire Wire Line
+	4965 5515 5165 5515
+Wire Wire Line
+	4915 5915 5165 5915
+Wire Wire Line
+	5165 5815 5015 5815
+Wire Wire Line
+	5015 5815 5015 5765
+Wire Wire Line
+	5015 5765 4915 5765
+Wire Wire Line
+	5165 5715 5065 5715
+Wire Wire Line
+	5065 5715 5065 5615
+Wire Wire Line
+	5065 5615 4915 5615
+Wire Wire Line
+	6915 6015 6365 6015
+Wire Wire Line
+	6915 5865 6615 5865
+Wire Wire Line
+	6615 5865 6615 5915
+Wire Wire Line
+	6615 5915 6365 5915
+Wire Wire Line
+	6915 5715 6565 5715
+Wire Wire Line
+	6565 5715 6565 5815
+Wire Wire Line
+	6565 5815 6365 5815
+Wire Wire Line
+	6915 5515 6815 5515
+Wire Wire Line
+	6815 5515 6815 5615
+Wire Wire Line
+	6815 5615 6365 5615
+Wire Wire Line
+	6715 5515 6365 5515
+Wire Wire Line
+	6715 5365 6715 5515
+Wire Wire Line
+	6715 5365 6915 5365
+Wire Wire Line
+	6915 5215 6615 5215
+Wire Wire Line
+	6615 5215 6615 5415
+Wire Wire Line
+	6615 5415 6365 5415
+Wire Wire Line
+	6465 4665 6465 5315
+Wire Wire Line
+	5015 6165 5015 6265
+Wire Wire Line
+	5665 5715 5665 6165
+$Comp
+L power:+5V #PWR?
+U 1 1 60286FDE
+P 6365 4615
+F 0 "#PWR?" H 6365 4465 50  0001 C CNN
+F 1 "+5V" H 6380 4788 50  0000 C CNN
+F 2 "" H 6365 4615 50  0001 C CNN
+F 3 "" H 6365 4615 50  0001 C CNN
+	1    6365 4615
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6029B0A3
+P 6335 6560
+F 0 "#PWR?" H 6335 6410 50  0001 C CNN
+F 1 "+5V" H 6350 6733 50  0000 C CNN
+F 2 "" H 6335 6560 50  0001 C CNN
+F 3 "" H 6335 6560 50  0001 C CNN
+	1    6335 6560
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 602AF375
+P 6360 2610
+F 0 "#PWR?" H 6360 2460 50  0001 C CNN
+F 1 "+5V" H 6375 2783 50  0000 C CNN
+F 2 "" H 6360 2610 50  0001 C CNN
+F 3 "" H 6360 2610 50  0001 C CNN
+	1    6360 2610
+	1    0    0    -1  
+$EndComp
+Connection ~ 6465 4665
+Connection ~ 5015 6165
+Wire Wire Line
+	5660 3710 5660 4160
+Wire Wire Line
+	5010 4160 5010 4260
+Wire Wire Line
+	6460 2660 6460 3310
+Wire Wire Line
+	6610 3410 6360 3410
+Wire Wire Line
+	6610 3210 6610 3410
+Wire Wire Line
+	6910 3210 6610 3210
+Wire Wire Line
+	6710 3360 6910 3360
+Wire Wire Line
+	6710 3360 6710 3510
+Wire Wire Line
+	6710 3510 6360 3510
+Wire Wire Line
+	6810 3610 6360 3610
+Wire Wire Line
+	6810 3510 6810 3610
+Wire Wire Line
+	6910 3510 6810 3510
+Wire Wire Line
+	6560 3810 6360 3810
+Wire Wire Line
+	6560 3710 6560 3810
+Wire Wire Line
+	6910 3710 6560 3710
+Wire Wire Line
+	6610 3910 6360 3910
+Wire Wire Line
+	6610 3860 6610 3910
+Wire Wire Line
+	6910 3860 6610 3860
+Wire Wire Line
+	6910 4010 6360 4010
+Wire Wire Line
+	5060 3610 4910 3610
+Wire Wire Line
+	5060 3710 5060 3610
+Wire Wire Line
+	5160 3710 5060 3710
+Wire Wire Line
+	5010 3760 4910 3760
+Wire Wire Line
+	5010 3810 5010 3760
+Wire Wire Line
+	5160 3810 5010 3810
+Wire Wire Line
+	4910 3910 5160 3910
+Wire Wire Line
+	4960 3510 5160 3510
+Wire Wire Line
+	4960 3410 4960 3510
+Wire Wire Line
+	4910 3410 4960 3410
+Wire Wire Line
+	5010 3410 5160 3410
+Wire Wire Line
+	5010 3260 5010 3410
+Wire Wire Line
+	4910 3260 5010 3260
+Wire Wire Line
+	5060 3310 5160 3310
+Wire Wire Line
+	5060 3110 5060 3310
+Wire Wire Line
+	4910 3110 5060 3110
+Text GLabel 6910 3710 2    60   Input ~ 0
+E4_D_OUT_Z
+Text GLabel 6910 3860 2    60   Input ~ 0
+E4_D_OUT_Y
+Text GLabel 6910 4010 2    60   Input ~ 0
+E4_DIR
+Text GLabel 4910 3610 0    60   Input ~ 0
+E4_S_OUT_Z
+Text GLabel 6910 3510 2    60   Input ~ 0
+E3_E_OUT_Z
+Text GLabel 6910 3360 2    60   Input ~ 0
+E3_E_OUT_Y
+Text GLabel 6910 3210 2    60   Input ~ 0
+E3_EN
+Text GLabel 4910 3410 0    60   Input ~ 0
+E3_D_OUT_Z
+Text GLabel 4910 3260 0    60   Input ~ 0
+E3_D_OUT_Y
+Text GLabel 4910 3110 0    60   Input ~ 0
+E3_DIR
+Connection ~ 5660 3710
+Wire Wire Line
+	6360 3710 5660 3710
+Connection ~ 5010 4160
+Wire Wire Line
+	5660 4160 5010 4160
+Wire Wire Line
+	5660 3610 5660 3710
+Wire Wire Line
+	5160 3610 5660 3610
+Wire Wire Line
+	5010 4010 5010 4160
+Wire Wire Line
+	5010 4010 5160 4010
+$Comp
+L power:GND #PWR07
+U 1 1 58996079
+P 5010 4260
+F 0 "#PWR07" H 5010 4010 50  0001 C CNN
+F 1 "GND" H 5010 4110 50  0000 C CNN
+F 2 "" H 5010 4260 50  0000 C CNN
+F 3 "" H 5010 4260 50  0000 C CNN
+	1    5010 4260
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6460 3310 6360 3310
+$Comp
+L power:GND #PWR06
+U 1 1 58996072
+P 6610 2910
+F 0 "#PWR06" H 6610 2660 50  0001 C CNN
+F 1 "GND" H 6610 2760 50  0000 C CNN
+F 2 "" H 6610 2910 50  0000 C CNN
+F 3 "" H 6610 2910 50  0000 C CNN
+	1    6610 2910
+	1    0    0    -1  
+$EndComp
+$Comp
+L ExpBreakout:am26c31 U2
+U 1 1 5899605F
+P 5760 3660
+F 0 "U2" H 5760 3810 50  0000 L CNN
+F 1 "75ALS192" H 5610 3460 50  0000 L CNN
+F 2 "complib:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 5760 3660 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/am26c31.pdf" H 6610 2960 50  0001 C CNN
+	1    5760 3660
+	1    0    0    -1  
+$EndComp
+Text GLabel 4910 3760 0    60   Input ~ 0
+E4_S_OUT_Y
+Text GLabel 4910 3910 0    60   Input ~ 0
+E4_STEP
+Wire Wire Line
+	835  11060 3455 11060
+Connection ~ 445  10070
+Wire Wire Line
+	445  9770 445  10070
+Wire Wire Line
+	445  10070 445  10220
+Wire Wire Line
+	835  10220 445  10220
+Connection ~ 835  10220
+Wire Wire Line
+	835  10220 835  11060
+$Comp
+L power:+3.3V #PWR?
+U 1 1 602EBC46
+P 525 9090
+F 0 "#PWR?" H 525 8940 50  0001 C CNN
+F 1 "+3.3V" H 540 9263 50  0000 C CNN
+F 2 "" H 525 9090 50  0001 C CNN
+F 3 "" H 525 9090 50  0001 C CNN
+	1    525  9090
+	1    0    0    -1  
+$EndComp
+$Comp
+L ExpBreakout:74HCT02 U5
+U 1 1 60A27AAE
+P 1845 9770
+F 0 "U5" H 1845 9820 60  0000 C CNN
+F 1 "74HCT02" H 1845 9720 60  0000 C CNN
+F 2 "FE Footprints:TSSOP-14" H 1845 9820 60  0001 C CNN
+F 3 "" H 1845 9820 60  0000 C CNN
+	1    1845 9770
+	1    0    0    -1  
+$EndComp
+Text GLabel 965  9920 0    60   BiDi ~ 0
+HEATER7
+Text GLabel 955  9620 0    60   Input ~ 0
+HEATER6
+Wire Wire Line
+	965  9920 1095 9920
+Wire Wire Line
+	1095 9770 445  9770
+Wire Wire Line
+	445  10070 1095 10070
+Wire Wire Line
+	1095 9470 1015 9470
+Wire Wire Line
+	1015 9470 1015 9320
+Wire Wire Line
+	615  9320 1015 9320
+Wire Wire Line
+	615  9320 615  9090
+Connection ~ 1015 9320
+Wire Wire Line
+	615  9090 525  9090
+$Comp
+L power:GND #PWR012
+U 1 1 60A27AAF
+P 1845 10880
+F 0 "#PWR012" H 1845 10880 30  0001 C CNN
+F 1 "GND" H 1845 10810 30  0001 C CNN
+F 2 "" H 1845 10880 60  0001 C CNN
+F 3 "" H 1845 10880 60  0001 C CNN
+	1    1845 10880
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1845 10880 1845 10770
+Wire Wire Line
+	2595 9370 3455 9370
+$Comp
+L ExpBreakout:C_SMALL C5
+U 1 1 60A27AB0
+P 2075 8850
+F 0 "C5" H 2100 8925 50  0000 L CNN
+F 1 "0u1" H 2075 8775 50  0000 L CNN
+F 2 "complib:C_0603" H 2075 8850 60  0001 C CNN
+F 3 "K104K10X7RF5UH5" H 2075 8850 60  0001 C CNN
+	1    2075 8850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2075 8950 2075 9000
+$Comp
+L power:GND #PWR013
+U 1 1 58C94B96
+P 2075 9000
+F 0 "#PWR013" H 2075 8750 50  0001 C CNN
+F 1 "GND" H 2075 8850 50  0000 C CNN
+F 2 "" H 2075 9000 50  0000 C CNN
+F 3 "" H 2075 9000 50  0000 C CNN
+	1    2075 9000
+	1    0    0    -1  
+$EndComp
+Text GLabel 2725 9670 2    60   Input ~ 0
+HEATER6_PWM
+Text GLabel 2725 10020 2    60   BiDi ~ 0
+HEATER7_PWM
+Wire Wire Line
+	2725 9670 2595 9670
+Wire Wire Line
+	2725 10020 2595 10020
+Wire Wire Line
+	1095 10220 1025 10220
+Wire Wire Line
+	1095 10370 1025 10370
+Wire Wire Line
+	1025 10370 1025 10220
+Connection ~ 1025 10220
+NoConn ~ 2595 10320
+Wire Wire Line
+	1015 9320 1095 9320
+Wire Wire Line
+	1025 10220 835  10220
+Wire Wire Line
+	955  9620 1095 9620
+Wire Wire Line
+	1845 8750 1845 8920
+$Comp
+L power:+5V #PWR?
+U 1 1 602C3AA9
+P 1745 8700
+F 0 "#PWR?" H 1745 8550 50  0001 C CNN
+F 1 "+5V" H 1760 8873 50  0000 C CNN
+F 2 "" H 1745 8700 50  0001 C CNN
+F 3 "" H 1745 8700 50  0001 C CNN
+	1    1745 8700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1845 8700 1745 8700
+Wire Wire Line
+	1845 8750 2075 8750
+Wire Wire Line
+	1845 8700 1845 8750
+Connection ~ 1845 8750
+Connection ~ 6460 2660
+Text GLabel 1560 4030 2    60   BiDi ~ 0
+PB6/TMS
+Wire Wire Line
+	1560 3730 1310 3730
+Wire Wire Line
+	2210 3880 1310 3880
+Text GLabel 1560 2530 2    60   Output ~ 0
+THERMISTOR7
+Text GLabel 1560 2230 2    60   Input ~ 0
+ADVREF
+Text GLabel 1560 4180 2    60   Input ~ 0
+ENN
+Text GLabel 1560 4330 2    60   Input ~ 0
+E6_EN
+Text GLabel 1560 4480 2    60   Input ~ 0
+E6_DIR
+Text GLabel 1560 4630 2    60   Input ~ 0
+E6_STEP
+Text GLabel 1560 4780 2    60   Output ~ 0
+E6_STOP
+Text GLabel 1560 880  2    60   Input ~ 0
+CS5
+Text GLabel 1560 1330 2    60   BiDi ~ 0
+SPI0_SCK
+Text GLabel 1560 3730 2    60   BiDi ~ 0
+HEATER7
+Text GLabel 1560 6280 2    60   Input ~ 0
+E4_STOP
+Text GLabel 1560 7030 2    60   Input ~ 0
+E3_STOP
+Text GLabel 1560 7780 2    60   Input ~ 0
+E2_STOP
+Text GLabel 1560 5830 2    60   Input ~ 0
+E4_EN
+Text GLabel 1560 6580 2    60   Input ~ 0
+E3_EN
+Text GLabel 1560 5980 2    60   Input ~ 0
+E4_DIR
+Text GLabel 1560 6730 2    60   Input ~ 0
+E3_DIR
+Text GLabel 1560 6130 2    60   Input ~ 0
+E4_STEP
+Text GLabel 1560 6880 2    60   Input ~ 0
+E3_STEP
+Text GLabel 1560 2830 2    60   Output ~ 0
+THERMISTOR5
+Text GLabel 1560 2980 2    60   Output ~ 0
+THERMISTOR4
+Text GLabel 1560 3130 2    60   Output ~ 0
+THERMISTOR3
+Text GLabel 1560 2680 2    60   Output ~ 0
+THERMISTOR6
+Text GLabel 1560 3580 2    60   BiDi ~ 0
+SPI1_SCK_BUFF_EXP
+Text GLabel 1560 7330 2    60   Input ~ 0
+E2_EN
+Text GLabel 1560 5680 2    60   Input ~ 0
+HEATER5
+Text GLabel 1560 6430 2    60   Input ~ 0
+HEATER4
+Text GLabel 1560 7180 2    60   Input ~ 0
+HEATER3
+Text GLabel 1560 7480 2    60   Input ~ 0
+E2_DIR
+Text GLabel 1560 7630 2    60   Input ~ 0
+E2_STEP
+Text GLabel 1560 4930 2    60   Input ~ 0
+HEATER6
+Text GLabel 1560 5080 2    60   Input ~ 0
+E5_EN
+Text GLabel 1560 5230 2    60   Input ~ 0
+E5_DIR
+Text GLabel 1560 5380 2    60   Input ~ 0
+E5_STEP
+Text GLabel 1560 5530 2    60   Output ~ 0
+E5_STOP
+Wire Wire Line
+	1560 2380 1310 2380
+Wire Wire Line
+	1310 4630 1560 4630
+Wire Wire Line
+	1560 5980 1310 5980
+Wire Wire Line
+	1310 6130 1560 6130
+Wire Wire Line
+	1310 5830 1560 5830
+Wire Wire Line
+	1560 5680 1310 5680
+Wire Wire Line
+	1310 7030 1560 7030
+Wire Wire Line
+	1560 1780 1310 1780
+Wire Wire Line
+	1560 1330 1310 1330
+Wire Wire Line
+	1560 1630 1310 1630
+Wire Wire Line
+	1560 3430 1310 3430
+Wire Wire Line
+	1560 2530 1310 2530
+Wire Wire Line
+	1560 2230 1310 2230
+Wire Wire Line
+	2110 2080 1310 2080
+Wire Wire Line
+	1560 1480 1310 1480
+Wire Wire Line
+	1560 1180 1310 1180
+Wire Wire Line
+	1560 6880 1310 6880
+Wire Wire Line
+	1560 7180 1310 7180
+Wire Wire Line
+	1560 7480 1310 7480
+Wire Wire Line
+	1560 7780 1310 7780
+Wire Wire Line
+	1560 6430 1310 6430
+Wire Wire Line
+	1560 880  1310 880 
+Wire Wire Line
+	1560 2680 1310 2680
+Wire Wire Line
+	1560 2980 1310 2980
+Wire Wire Line
+	1560 4030 1310 4030
+Wire Wire Line
+	1560 4330 1310 4330
+Wire Wire Line
+	1560 4930 1310 4930
+Wire Wire Line
+	1560 5230 1310 5230
+Wire Wire Line
+	1560 5530 1310 5530
+Wire Wire Line
+	1560 6580 1310 6580
+Wire Wire Line
+	1560 8230 1310 8230
+Wire Wire Line
+	1560 6730 1310 6730
+Wire Wire Line
+	1560 6280 1310 6280
+Wire Wire Line
+	1560 5380 1310 5380
+Wire Wire Line
+	1560 5080 1310 5080
+Wire Wire Line
+	1560 4780 1310 4780
+Wire Wire Line
+	1560 4480 1310 4480
+Wire Wire Line
+	1560 4180 1310 4180
+Wire Wire Line
+	1560 3580 1310 3580
+Wire Wire Line
+	1560 3130 1310 3130
+Wire Wire Line
+	1560 2830 1310 2830
+Wire Wire Line
+	1560 1030 1310 1030
+Wire Wire Line
+	1560 3280 1310 3280
+Wire Wire Line
+	1310 7630 1560 7630
+Wire Wire Line
+	1560 7330 1310 7330
+Text GLabel 1560 1630 2    60   Input ~ 0
+TWD0
+Text GLabel 1560 1480 2    60   Input ~ 0
+TWCK0
+Text GLabel 1560 1780 2    60   Input ~ 0
+RESET
+Text GLabel 1560 1180 2    60   BiDi ~ 0
+SPI0_MOSI
+Text GLabel 1560 1030 2    60   BiDi ~ 0
+SPI0_MISO
+Text GLabel 1560 3280 2    60   BiDi ~ 0
+SPI1_MISO
+Text GLabel 1560 3430 2    60   BiDi ~ 0
+SPI1_MOSI_BUFF
+$Comp
+L ExpBreakout:CONN2X25 J1
+U 1 1 5891BA24
+P 910 4630
+F 0 "J1" H 910 700 60  0000 C CNN
+F 1 "EXPANSION" H 910 8300 60  0000 C CNN
+F 2 "complib:PIN_ARRAY_25X2" H 910 4630 60  0001 C CNN
+F 3 "" H 910 4630 60  0001 C CNN
+	1    910  4630
+	-1   0    0    1   
+$EndComp
+Text GLabel 1560 2380 2    60   BiDi ~ 0
+VSSA
+Wire Wire Line
+	3455 9370 3455 11060
+Connection ~ 6525 895 
+$Comp
+L ExpBreakout:C_SMALL C4
+U 1 1 58997F64
+P 6675 995
+F 0 "C4" H 6700 1070 50  0000 L CNN
+F 1 "0u1" H 6675 920 50  0000 L CNN
+F 2 "complib:C_0603" H 6675 995 60  0001 C CNN
+F 3 "K104K10X7RF5UH5" H 6675 995 60  0001 C CNN
+	1    6675 995 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6525 845  6425 845 
+Wire Wire Line
+	6525 895  6675 895 
+Wire Wire Line
+	6525 845  6525 895 
+Wire Wire Line
+	6525 895  6525 1440
+$Comp
+L power:+5V #PWR?
+U 1 1 60B5735A
+P 6425 845
+F 0 "#PWR?" H 6425 695 50  0001 C CNN
+F 1 "+5V" H 6440 1018 50  0000 C CNN
+F 2 "" H 6425 845 50  0001 C CNN
+F 3 "" H 6425 845 50  0001 C CNN
+	1    6425 845 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 58997F70
+P 6675 1145
+F 0 "#PWR010" H 6675 895 50  0001 C CNN
+F 1 "GND" H 6675 995 50  0000 C CNN
+F 2 "" H 6675 1145 50  0000 C CNN
+F 3 "" H 6675 1145 50  0000 C CNN
+	1    6675 1145
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6675 1095 6675 1145
+Wire Wire Line
+	6525 1440 6385 1440
+Text GLabel 4935 2040 0    60   Input ~ 0
+E6_EN
+Text GLabel 4935 1890 0    60   Input ~ 0
+E6_E_OUT_Y
+$Comp
+L ExpBreakout:am26c31 U4
+U 1 1 60A27AAA
+P 5785 1790
+F 0 "U4" H 5785 1940 50  0000 L CNN
+F 1 "75ALS192" H 5635 1590 50  0000 L CNN
+F 2 "complib:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 5785 1790 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/am26c31.pdf" H 6635 1090 50  0001 C CNN
+	1    5785 1790
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 58997F77
+P 5035 2390
+F 0 "#PWR011" H 5035 2140 50  0001 C CNN
+F 1 "GND" H 5035 2240 50  0000 C CNN
+F 2 "" H 5035 2390 50  0000 C CNN
+F 3 "" H 5035 2390 50  0000 C CNN
+	1    5035 2390
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5035 2140 5185 2140
+Wire Wire Line
+	5035 2140 5035 2290
+Wire Wire Line
+	5185 1740 5685 1740
+Wire Wire Line
+	5685 1740 5685 1840
+Wire Wire Line
+	5035 2290 5685 2290
+Connection ~ 5035 2290
+Wire Wire Line
+	6385 1840 5685 1840
+Connection ~ 5685 1840
+Text GLabel 4935 1240 0    60   Input ~ 0
+E6_STEP
+Text GLabel 4935 1390 0    60   Input ~ 0
+E6_S_OUT_Y
+Text GLabel 4935 1540 0    60   Input ~ 0
+E6_S_OUT_Z
+Text GLabel 6935 1340 2    60   Input ~ 0
+E6_DIR
+Text GLabel 6935 1490 2    60   Input ~ 0
+E6_D_OUT_Y
+Text GLabel 6935 1640 2    60   Input ~ 0
+E6_D_OUT_Z
+Text GLabel 4935 1740 0    60   Input ~ 0
+E6_E_OUT_Z
+Wire Wire Line
+	4935 1240 5085 1240
+Wire Wire Line
+	5085 1240 5085 1440
+Wire Wire Line
+	5085 1440 5185 1440
+Wire Wire Line
+	4935 1390 5035 1390
+Wire Wire Line
+	5035 1390 5035 1540
+Wire Wire Line
+	5035 1540 5185 1540
+Wire Wire Line
+	4935 1540 4985 1540
+Wire Wire Line
+	4985 1540 4985 1640
+Wire Wire Line
+	4985 1640 5185 1640
+Wire Wire Line
+	4935 2040 5185 2040
+Wire Wire Line
+	5185 1940 5035 1940
+Wire Wire Line
+	5035 1940 5035 1890
+Wire Wire Line
+	5035 1890 4935 1890
+Wire Wire Line
+	5185 1840 5085 1840
+Wire Wire Line
+	5085 1840 5085 1740
+Wire Wire Line
+	5085 1740 4935 1740
+Wire Wire Line
+	6935 1640 6835 1640
+Wire Wire Line
+	6835 1640 6835 1740
+Wire Wire Line
+	6835 1740 6385 1740
+Wire Wire Line
+	6735 1640 6385 1640
+Wire Wire Line
+	6735 1490 6735 1640
+Wire Wire Line
+	6735 1490 6935 1490
+Wire Wire Line
+	6935 1340 6635 1340
+Wire Wire Line
+	6635 1340 6635 1540
+Wire Wire Line
+	6635 1540 6385 1540
+Wire Wire Line
+	6385 2290 6385 2140
+Connection ~ 5685 2290
+NoConn ~ 6385 2040
+NoConn ~ 6385 1940
+Wire Wire Line
+	5035 2290 5035 2390
+Wire Wire Line
+	5685 1840 5685 2290
+Wire Wire Line
+	5685 2290 6385 2290
+$Comp
+L power:GND #PWR?
+U 1 1 6100184D
+P 2110 2080
+F 0 "#PWR?" H 2110 1830 50  0001 C CNN
+F 1 "GND" H 2115 1907 50  0000 C CNN
+F 2 "" H 2110 2080 50  0001 C CNN
+F 3 "" H 2110 2080 50  0001 C CNN
+	1    2110 2080
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 610022CF
+P 2080 1930
+F 0 "#PWR?" H 2080 1780 50  0001 C CNN
+F 1 "+3.3V" H 2095 2103 50  0000 C CNN
+F 2 "" H 2080 1930 50  0001 C CNN
+F 3 "" H 2080 1930 50  0001 C CNN
+	1    2080 1930
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1310 1930 2080 1930
+Wire Wire Line
+	1310 8080 2040 8080
+$Comp
+L power:GND #PWR?
+U 1 1 61049777
+P 2040 8080
+F 0 "#PWR?" H 2040 7830 50  0001 C CNN
+F 1 "GND" H 2035 7950 50  0000 C CNN
+F 2 "" H 2040 8080 50  0001 C CNN
+F 3 "" H 2040 8080 50  0001 C CNN
+	1    2040 8080
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61061D15
+P 2095 7930
+F 0 "#PWR?" H 2095 7780 50  0001 C CNN
+F 1 "+3.3V" H 2110 8103 50  0000 C CNN
+F 2 "" H 2095 7930 50  0001 C CNN
+F 3 "" H 2095 7930 50  0001 C CNN
+	1    2095 7930
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1310 7930 2095 7930
+$Comp
+L power:+5V #PWR?
+U 1 1 61079F7A
+P 1560 8230
+F 0 "#PWR?" H 1560 8080 50  0001 C CNN
+F 1 "+5V" H 1660 8330 50  0000 C CNN
+F 2 "" H 1560 8230 50  0001 C CNN
+F 3 "" H 1560 8230 50  0001 C CNN
+	1    1560 8230
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61092747
+P 2210 3880
+F 0 "#PWR?" H 2210 3630 50  0001 C CNN
+F 1 "GND" H 2215 3707 50  0000 C CNN
+F 2 "" H 2210 3880 50  0001 C CNN
+F 3 "" H 2210 3880 50  0001 C CNN
+	1    2210 3880
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

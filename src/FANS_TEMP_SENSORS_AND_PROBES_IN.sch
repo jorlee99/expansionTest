@@ -1,0 +1,290 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x02 J20
+U 1 1 60038E77
+P 900 900
+F 0 "J20" V 864 712 50  0000 R CNN
+F 1 "FAN2" V 773 712 50  0000 R CNN
+F 2 "complib:PIN_ARRAY_2X1" H 900 900 50  0001 C CNN
+F 3 "~" H 900 900 50  0001 C CNN
+	1    900  900 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J23
+U 1 1 60039C09
+P 1700 900
+F 0 "J23" V 1664 712 50  0000 R CNN
+F 1 "FAN1" V 1573 712 50  0000 R CNN
+F 2 "complib:PIN_ARRAY_2X1" H 1700 900 50  0001 C CNN
+F 3 "~" H 1700 900 50  0001 C CNN
+	1    1700 900 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J25
+U 1 1 6003A011
+P 2500 900
+F 0 "J25" V 2464 712 50  0000 R CNN
+F 1 "FAN0" V 2373 712 50  0000 R CNN
+F 2 "complib:PIN_ARRAY_2X1" H 2500 900 50  0001 C CNN
+F 3 "~" H 2500 900 50  0001 C CNN
+	1    2500 900 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J26
+U 1 1 6003A1F8
+P 3300 900
+F 0 "J26" V 3264 712 50  0000 R CNN
+F 1 "ALWAYS_FAN1" V 3173 712 50  0000 R CNN
+F 2 "complib:PIN_ARRAY_2X1" H 3300 900 50  0001 C CNN
+F 3 "~" H 3300 900 50  0001 C CNN
+	1    3300 900 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J27
+U 1 1 6003A6DD
+P 4100 900
+F 0 "J27" V 4064 712 50  0000 R CNN
+F 1 "ALWAYS_FAN0" V 3973 712 50  0000 R CNN
+F 2 "complib:PIN_ARRAY_2X1" H 4100 900 50  0001 C CNN
+F 3 "~" H 4100 900 50  0001 C CNN
+	1    4100 900 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J21
+U 1 1 6003B5D9
+P 900 2400
+F 0 "J21" V 864 2212 50  0000 R CNN
+F 1 "THERMISTOR2" V 773 2212 50  0000 R CNN
+F 2 "complib:PIN_ARRAY_2X1" H 900 2400 50  0001 C CNN
+F 3 "~" H 900 2400 50  0001 C CNN
+	1    900  2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J24
+U 1 1 6003B5DF
+P 1700 2400
+F 0 "J24" V 1664 2212 50  0000 R CNN
+F 1 "THERMISTOR1" V 1573 2212 50  0000 R CNN
+F 2 "complib:PIN_ARRAY_2X1" H 1700 2400 50  0001 C CNN
+F 3 "~" H 1700 2400 50  0001 C CNN
+	1    1700 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J28
+U 1 1 6003B74A
+P 4100 2400
+F 0 "J28" V 4064 2212 50  0000 R CNN
+F 1 "THERMISTOR0" V 3973 2212 50  0000 R CNN
+F 2 "complib:PIN_ARRAY_2X1" H 4100 2400 50  0001 C CNN
+F 3 "~" H 4100 2400 50  0001 C CNN
+	1    4100 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J22
+U 1 1 6003BA6E
+P 1400 3900
+F 0 "J22" V 1364 4080 50  0000 L CNN
+F 1 "Z_PROBE" V 1273 4080 50  0000 L CNN
+F 2 "complib:PIN_ARRAY_4x1" H 1400 3900 50  0001 C CNN
+F 3 "~" H 1400 3900 50  0001 C CNN
+	1    1400 3900
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	900  1100 900  1600
+Wire Wire Line
+	900  1600 1100 1600
+Wire Wire Line
+	1000 1100 1000 1400
+Wire Wire Line
+	1000 1400 1100 1400
+Text GLabel 1100 1400 2    39   Input ~ 0
+V_FAN
+Wire Wire Line
+	4200 1100 4200 1300
+Wire Wire Line
+	4200 1300 4300 1300
+Wire Wire Line
+	4100 1100 4100 1400
+Wire Wire Line
+	4100 1400 4300 1400
+Text GLabel 4300 1300 2    39   Input ~ 0
+V_FAN
+Wire Wire Line
+	3300 1100 3300 1300
+Wire Wire Line
+	3300 1300 3500 1300
+Wire Wire Line
+	3400 1100 3400 1200
+Wire Wire Line
+	3400 1200 3500 1200
+Text GLabel 3500 1200 2    39   Input ~ 0
+V_FAN
+$Comp
+L power:GND #PWR0161
+U 1 1 6007214D
+P 3500 1300
+F 0 "#PWR0161" H 3500 1050 50  0001 C CNN
+F 1 "GND" H 3505 1127 50  0000 C CNN
+F 2 "" H 3500 1300 50  0001 C CNN
+F 3 "" H 3500 1300 50  0001 C CNN
+	1    3500 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0162
+U 1 1 6007227F
+P 4300 1400
+F 0 "#PWR0162" H 4300 1150 50  0001 C CNN
+F 1 "GND" H 4305 1227 50  0000 C CNN
+F 2 "" H 4300 1400 50  0001 C CNN
+F 3 "" H 4300 1400 50  0001 C CNN
+	1    4300 1400
+	1    0    0    -1  
+$EndComp
+Text GLabel 1100 1600 2    39   Input ~ 0
+V_FAN2-
+Wire Wire Line
+	1700 1100 1700 1600
+Wire Wire Line
+	1700 1600 1900 1600
+Wire Wire Line
+	1800 1100 1800 1400
+Wire Wire Line
+	1800 1400 1900 1400
+Text GLabel 1900 1400 2    39   Input ~ 0
+V_FAN
+Text GLabel 1900 1600 2    39   Input ~ 0
+V_FAN1-
+Wire Wire Line
+	2500 1100 2500 1600
+Wire Wire Line
+	2500 1600 2700 1600
+Wire Wire Line
+	2600 1100 2600 1400
+Wire Wire Line
+	2600 1400 2700 1400
+Text GLabel 2700 1400 2    39   Input ~ 0
+V_FAN
+Text GLabel 2700 1600 2    39   Input ~ 0
+V_FAN0-
+Text GLabel 1100 3000 2    39   Input ~ 0
+VSSA
+Wire Wire Line
+	900  2600 900  3000
+Wire Wire Line
+	900  3000 1100 3000
+Wire Wire Line
+	1000 2600 1000 2900
+Wire Wire Line
+	1000 2900 1100 2900
+Text GLabel 1100 2900 2    39   Input ~ 0
+THERMISTOR2
+Text GLabel 1900 3000 2    39   Input ~ 0
+VSSA
+Wire Wire Line
+	1700 2600 1700 3000
+Wire Wire Line
+	1700 3000 1900 3000
+Wire Wire Line
+	1800 2600 1800 2900
+Wire Wire Line
+	1800 2900 1900 2900
+Text GLabel 1900 2900 2    39   Input ~ 0
+THERMISTOR1
+Text GLabel 4300 3000 2    39   Input ~ 0
+VSSA
+Wire Wire Line
+	4100 2600 4100 3000
+Wire Wire Line
+	4100 3000 4300 3000
+Wire Wire Line
+	4200 2600 4200 2900
+Wire Wire Line
+	4200 2900 4300 2900
+Text GLabel 4300 2900 2    39   Input ~ 0
+THERMISTOR0
+$Comp
+L power:+3.3V #PWR0163
+U 1 1 60074E76
+P 2100 4100
+F 0 "#PWR0163" H 2100 3950 50  0001 C CNN
+F 1 "+3.3V" H 2115 4273 50  0000 C CNN
+F 2 "" H 2100 4100 50  0001 C CNN
+F 3 "" H 2100 4100 50  0001 C CNN
+	1    2100 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 4100 2100 4300
+Wire Wire Line
+	2100 4300 1500 4300
+Wire Wire Line
+	1500 4300 1500 4100
+Wire Wire Line
+	1400 4100 1400 4500
+Wire Wire Line
+	1400 4500 1500 4500
+Text GLabel 1500 4500 2    39   Input ~ 0
+Z_PROBE_MOD
+Wire Wire Line
+	1300 4100 1300 4600
+$Comp
+L DuetWifi-cache:GND #PWR0164
+U 1 1 6007892E
+P 1300 4600
+F 0 "#PWR0164" H 1300 4350 50  0001 C CNN
+F 1 "GND" H 1305 4427 50  0000 C CNN
+F 2 "" H 1300 4600 50  0001 C CNN
+F 3 "" H 1300 4600 50  0001 C CNN
+	1    1300 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 4100 1200 4900
+Wire Wire Line
+	1200 4900 1500 4900
+Text GLabel 1500 4900 2    39   Input ~ 0
+Z_PROBE_IN
+$Comp
+L Connector_Generic:Conn_01x02 J17
+U 1 1 607468AC
+P 4125 4050
+F 0 "J17" V 4089 3862 50  0000 R CNN
+F 1 "Extruder_heater" V 3998 3862 50  0000 R CNN
+F 2 "complib:3.5MM_2X1" H 4125 4050 50  0001 C CNN
+F 3 "~" H 4125 4050 50  0001 C CNN
+	1    4125 4050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4125 4250 3895 4250
+Wire Wire Line
+	4225 4250 4460 4250
+Text GLabel 3895 4250 0    50   Input ~ 0
+E0+
+Text GLabel 4460 4250 2    50   Input ~ 0
+E0-
+$EndSCHEMATC

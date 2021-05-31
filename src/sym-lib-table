@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name ExpBreakout)(type Legacy)(uri C:/Users/Stanley/Desktop/Duet-2-Hardware/Duet_Expansion/Expansion_Breakoutv1.1/ExpBreakout.lib)(options "")(descr ""))
+  (lib (name ExpBreakout-rescue)(type Legacy)(uri C:/Users/Stanley/Desktop/Duet-2-Hardware/Duet_Expansion/Expansion_Breakoutv1.1/ExpBreakout-rescue.lib)(options "")(descr ""))
+  (lib (name expansion-rescue)(type Legacy)(uri ${KIPRJMOD}/expansion-rescue.lib)(options "")(descr ""))
+)
