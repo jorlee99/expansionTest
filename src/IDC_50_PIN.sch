@@ -1420,4 +1420,26 @@ Wire Notes Line
 	2600 10500 3775 10500
 Wire Notes Line
 	2600 500  2600 10500
+$Comp
+L DuetWifi:FID M3
+U 1 1 6066E704
+P 1775 9400
+F 0 "M3" H 1853 9506 60  0000 L CNN
+F 1 "FID" H 1853 9400 60  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask3mm" H 1853 9294 60  0000 L CNN
+F 3 "" H 1775 9400 60  0000 C CNN
+	1    1775 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L DuetWifi:FID M2
+U 1 1 6066EC07
+P 1750 9775
+F 0 "M2" H 1828 9881 60  0000 L CNN
+F 1 "FID" H 1828 9775 60  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask3mm" H 1828 9669 60  0000 L CNN
+F 3 "" H 1750 9775 60  0000 C CNN
+	1    1750 9775
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

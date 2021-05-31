@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\Stanley\Desktop\ELEC\ExpansionShield\expansion.sch)
-    (date "3/30/2021 1:14:47 PM")
+    (date "4/1/2021 11:46:11 AM")
     (tool "Eeschema (5.1.6)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -241,6 +241,18 @@
       (libsource (lib Mechanical) (part Heatsink_Pad) (description "Heatsink with electrical connection, 1 pin"))
       (sheetpath (names /Sheet6008A30C/) (tstamps /6008A30D/))
       (tstamp 609BB2AD))
+    (comp (ref M3)
+      (value FID)
+      (footprint Fiducial:Fiducial_1mm_Mask3mm)
+      (libsource (lib DuetWifi) (part FID) (description ""))
+      (sheetpath (names /Sheet6008A30C/) (tstamps /6008A30D/))
+      (tstamp 6066E704))
+    (comp (ref M2)
+      (value FID)
+      (footprint Fiducial:Fiducial_1mm_Mask3mm)
+      (libsource (lib DuetWifi) (part FID) (description ""))
+      (sheetpath (names /Sheet6008A30C/) (tstamps /6008A30D/))
+      (tstamp 6066EC07))
     (comp (ref J30)
       (value Conn_01x02)
       (footprint footprints:Molex_Mini-Fit_Jr_5566-02A_2x01_P4.20mm_Vertical)
@@ -1194,6 +1206,10 @@
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
+    (libpart (lib DuetWifi) (part FID)
+      (fields
+        (field (name Reference) M)
+        (field (name Value) FID)))
     (libpart (lib DuetWifi-cache) (part LOGO)
       (fields
         (field (name Reference) M)
@@ -1343,6 +1359,8 @@
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Connector_Generic.lib"))
     (library (logical Device)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Device.lib"))
+    (library (logical DuetWifi)
+      (uri C:/Users/Stanley/Desktop/ELEC/Kicad/Duet/Duet2/Duet2v1.04/DuetWifi.lib))
     (library (logical DuetWifi-cache)
       (uri C:/Users/Stanley/Desktop/ELEC/Kicad/Duet/Duet2/Duet2v1.04/DuetWifi-cache.lib))
     (library (logical Mechanical)
